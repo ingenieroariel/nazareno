@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Iglesia del Nazareno Mount Vernon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        background-image:url('img/nazarene.jpg');
+        background-repeat:no-repeat;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 54px;
+        line-height: 1;
+        font-family:'Cinzel', serif;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+      h2 {
+                font-family:'Cinzel', serif;
+                        text-align: center;
+
+margin-top: 20px;
+      }
+
+     .calendario-list li {
+        list-style-type: none;
+        text-align: center;
+        font-size: 20px;
+        font-family:'Cinzel', serif;
+
+      }
+
+     .calendario-list > li > h3 {
+        font-family:'Cinzel', serif;
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+
+     }
+
+     .footer {
+      border-top: 1px solid black;
+     }
+
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/ico/favicon.png">
+
+  <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
+  <style>
+    #map { height: 100px; width:100%; margin-bottom: 20px;}
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="#calendario">Calendario</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        <h1>IGLESIA DEL NAZARENO<br>Mount Vernon</h1>
+        <p class="lead">3220 Holly Hill Rd. Alexandria, VA 22306</p>
+         <div id='map' ></div>
+        <a class="btn btn-large btn-success" href="#">Todos los Domingos a las 11:00 a.m.</a>
+
+      </div>
+
+      <div class="row-fluid marketing">
+       <div class="span5">
+          <img src="img/pastores.png" />
+          <p>Pastores Nelson y Laura Villatoro</p>
+        </div>
+        <div class="span7">
+          <h4>Una Iglesia Amigable</h4>
+          <p>Para hispanos, con el calor y amor que caracteriza a nuestro pueblo latino. </p>
+
+          <h4>Sana Doctrina</h4>
+          <p>La iglesia del Nazareno es una iglesia cristiana protestante de denominación Wesleyana. <a href="http://nazarene.org/ministries/gensec/ArticlesofFaith/Spanish/display.html" target="_blank">Ver artículos de fe.</a></p>
+
+          <h4>Seamos como Cristo</h4>
+          <p>Nuestro método se basa en Ganar almas para el señor, Cuidarlas, Discipularlas y Enviarlas a evangelizar.</p>
+        </div>
+
+      <div class="span12">
+
+      <h2 id="calendario">Calendario</h2>
+      <ul class="calendario-list">
+        <li>
+          <h3>Domingo - Diciembre 16</h3>
+          <dl class="dl-horizontal">
+          <dt>9:30 a.m.</dt>
+          <dd>Oración</dd>    
+          <dt>10:00 a.m.</dt>
+          <dd>Escuela Dominical</dd>
+          <dt>11:00 a.m.</dt>
+          <dd>Servicio de Oración</dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Jueves - Diciembre 20</h3>
+          <dl class="dl-horizontal">
+          <dt>7:00 p.m.</dt>
+          <dd>Servicio de Oración</dd>
+          </dl>
+        </li>
+      </ul>
+
+     <div class="span12">
+
+      <h2 id="contacto">Contacto</h2>
+      <p>Iglesia del Nazareno Mount Vernon
+3220 Holly Hill Rd.
+Alexandria, VA 22306
+
+<ul>
+  <li>703-765-0895 Casa Pastoral</li>
+  <li>info@mtvernonnazarenos.org</li>
+  <li>pastornelson@mtvernonnazarenos.org</li>
+  <li>pastoralaura@mtvernonnazarenos.org</li>
+</ul>
+      <p>Si desea acompañarnos en el servicio del domingo, pero no tiene transporte, llamenos al (240) 505-9248 antes de las 8:00 a.m. y con gusto enviaremos por usted a un hermano en la van de la iglesia.</p>
+
+    </div>
+
+
+      <div class="footer">
+        <p>Copyright &copy; 2012. Iglesia Mount Vernon,VA. All Rights Reserved.</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+      <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.js'></script>
+
+<script>
+  var map = mapbox.map('map');
+  map.addLayer(mapbox.layer().id('ingenieroariel.map-q7yj53lf'));
+    var markerLayer = mapbox.markers.layer();
+
+  // Add interaction to this marker layer. This
+  // binds tooltips to each marker that has title
+  // and description defined.
+  mapbox.markers.interaction(markerLayer);
+  map.addLayer(markerLayer);
+    // Add a single feature to the markers layer.
+  // You can use .features() to add multiple features.
+  markerLayer.add_feature({
+      geometry: {
+          coordinates: [-77, 37.9]
+      },
+      properties: {
+          'marker-color': '#000',
+          'marker-symbol': 'religious-christian',
+          title: 'Example Marker',
+          description: 'This is a single marker.'
+      }
+  });
+  map.zoom(6).center({ lat: 38, lon: -77 });
+</script>
+  </body>
+</html>
